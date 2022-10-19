@@ -1,0 +1,56 @@
+
+.profile-card {
+    min-width: 250px;
+    min-height: 450px;
+    width: 60%;
+    height: 75%;
+    background-color: #100f0f7c;
+    border-radius: 40px;
+    margin: 80px auto;
+}
+
+.picture-card {
+    width: 60%;
+    height: min-content;
+    margin: 1.5rem auto 0px;
+    overflow: hidden;
+    padding: 20px 0px 0px;
+}
+
+.img-profile {
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+    border: solid blue 2px;
+}
+
+.title-name-box {
+    width: 100%;
+    padding: 0px 10px;
+}
+
+.title-name {
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.age-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.my-age {
+    font-size: 1.2rem;
+}
+
+.college-box {
+    padding: 0px 10px;
+}
+.college {
+    text-align: center;
+}
+
+.skills-box {
+    padding: 20px;
+}

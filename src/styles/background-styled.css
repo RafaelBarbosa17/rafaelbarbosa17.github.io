@@ -1,0 +1,200 @@
+
+.background-styled {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #2D2929;
+    z-index: -10;
+}
+
+.backlight {
+    position: absolute;
+    z-index: -9;
+    border-radius: 50%;
+}
+
+.backlight:nth-child(1) {
+    width: 150px;
+    height: 150px;
+    background-color: #0000ff;
+    box-shadow: 0px 0px 100px 100px #0000ff;
+    animation: blp1 120s linear infinite;
+    filter: blur(20px);
+}
+@keyframes blp1 {
+    0% {
+        bottom: 0px;
+        left: 0px;
+    }
+    15% {
+        bottom: 60%;
+    }
+    25% {
+        bottom: 80%;
+        left: 50%;
+    }
+    50% {
+        bottom: 40%;
+    }
+    75% {
+        bottom: 20%;
+        left: 100%;
+    }
+    100% {
+        bottom: 0px;
+        left: 0px;
+        box-shadow: 0px 0px 150px 150px #0000ff;
+    }
+}
+.backlight:nth-child(2) {
+    width: 100px;
+    height: 100px;
+    background-color: #ff0000;
+    box-shadow: 0px 0px 100px 100px #ff0000;
+    animation: blp2 120s linear infinite;
+}
+@keyframes blp2 {
+    0% {
+        top: 0px;
+        left: 0px;
+    }
+    25% {
+        top: 80%;
+        left: 50%;
+    }
+    50% {
+        top: 60%;
+        left: 0%;
+    } 
+    100% {
+        top: 0px;
+        left: 0px;
+        box-shadow: 0px 0px 100px 100px #ff0000;
+    }
+}
+.backlight:nth-child(3) {
+    box-shadow: 0px 0px 100px 100px #ff0000;
+    animation: blp3 120s linear infinite;
+}
+@keyframes blp3 {
+    0% {
+        top: 0px;
+        left: 0px;
+    }
+    25% {
+        top: 50%;
+        left: 70%;
+        box-shadow: 0px 0px 75px 75px blueviolet;
+    }
+    50% {
+        top: 20%;
+        left: 100%;
+        box-shadow: 0px 0px 75px 75px blueviolet;
+    }
+    100% {
+        top: 0px;
+        left: 0px;
+        box-shadow: 0px 0px 100px 100px #ff0000;
+    }
+}
+.backlight:nth-child(4) {
+    box-shadow: 0px 0px 100px 100px #00ff00;
+    animation: blp4 60s linear infinite;
+}
+@keyframes blp4 {
+    0% {
+        top: 0px;
+        right: 0px;
+    }
+    25% {
+        top: 30%;
+        right: 50%;
+        box-shadow: 0px 0px 100px 100px aqua;
+    }
+    50% {
+        top: 20%;
+        right: 100%;
+        box-shadow: 0px 0px 150px 150px #00ff00;
+    }
+    100% {
+        top: 0px;
+        right: 0px;
+        box-shadow: 0px 0px 100px 100px #00ff00;
+    }
+}
+.backlight:nth-child(5) {
+    box-shadow: 0px 0px 100px 100px #ee5f00;
+    animation: blp5 90s linear infinite;
+}
+@keyframes blp5 {
+    0% {
+        bottom: 30%;
+        right: 0px;
+    }
+    25% {
+        bottom: 20%;
+        right: 50%;
+        box-shadow: 0px 0px 150px 150px #ff2600;
+    }
+    50% {
+        bottom: 10%;
+        right: 100%;
+        box-shadow: 0px 0px 200px 200px #ff2600;
+    }
+    100% {
+        bottom: 30%;
+        right: 0px;
+        box-shadow: 0px 0px 100px 100px #ee5f00;
+    }
+}
+
+.particles {
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px 7px white;
+    background-color: white;
+    z-index: -9;
+}
+
+.particles::before {
+    content: '';
+    position: absolute;
+    width: 5%;
+    height: 50%;
+    background-color: white;
+    animation: moveParticles 100ms linear;
+}
+
+@keyframes moveParticles {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(50px);
+    }
+}
+
+.boom {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    filter: blur(5px);
+    animation: bigBoom 500ms ease-out;
+}
+
+@keyframes bigBoom {
+    0% {
+        box-shadow: 0px 0px 10px 0px white;
+    }
+    50% {
+        box-shadow: 0px 0px 15px 7.5px white;
+    }
+    75% {
+        box-shadow: 0px 0px 20px 10px white;
+    }
+    100% {
+        box-shadow: 0px 0px 80px 20px white;
+    }
+}

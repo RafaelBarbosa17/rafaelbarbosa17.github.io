@@ -5,80 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/style.css">
-    <link rel="stylesheet" href="./src/styles/header.css">
-    <link rel="stylesheet" href="./src/styles/main.css">
+    <link rel="stylesheet" href="./src/styles/background-styled.css">
+    <link rel="stylesheet" href="./src/styles/profile-card-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <title>Desenvolvedor | Rafael Barbosa</title>
 </head>
 <body>
-    <header class="header-main">
-        <div class="profile-container">
-            <div class="profile-box">
-                <div class="profile-item">
-                    <img class="img-profile" >
-                </div>
+    <div class="background-styled">
+        <div class="backlight l1"></div>
+        <div class="backlight l2"></div>
+        <div class="backlight l3"></div>
+        <div class="backlight l4"></div>
+        <div class="backlight l5"></div>
+    </div>
+    <aside>
+        <div class="profile-card">
+            <div class="picture-card">
+                <img class="img-profile" src="" alt="">
             </div>
-        </div>
-        <div class="sub-header-container">
-            <div class="sub-header-box">
-                <div class="title-container">
-                    <div class="title-box">
-                        <div class="title-item">
-                            <h1 class="title-name"></h1>
-                        </div>
-                    </div>
-                </div>
+            <div class="title-name-box">
+                <h1 class="title-name"></h1>
             </div>
-        </div>
-        <div class="more-button">
-            <div class="burguer"></div>
-            <div class="burguer" id="burguer-m"></div>
-            <div class="burguer"></div>
-        </div>
-        <div class="more-informations">
-            <div class="skills-container">
-                <div class="age-box">
-                    <div class="age-item">
-                        <span>Idade: </span>
-                        <span class="my-age">0</span>
-                    </div>
-                    <br>
-                    <div class="lenguages">
-                        <ul>
-                            <li>JavaScript</li>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>React</li>
-                            <li>Node</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <main class="main-menu">
-        <div class="skills-container">
             <div class="age-box">
-                <div class="age-item">
-                    <span>Idade: </span>
-                    <span class="my-age">0</span>
-                </div>
-                <br>
-                <div class="lenguages">
-                    <ul>
-                        <li>JavaScript</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>React</li>
-                        <li>Node</li>
-                    </ul>
-                </div>
+                <span class="my-age"></span>
+            </div>
+            <div class="college-box">
+                <hr>
+                <p class="college">
+                    Análise e Desenvolvimento de Sistemas
+                </p>
+                <hr>
+            </div>
+            <div class="skills-box">
+                <p class="skills">
+                    React.js | JavaScript | HTML | CSS | PHP | Node.js | Linux | Git ...
+                </p>
             </div>
         </div>
-        <div class="repos-container">
-            <h2 class="repos-title">Repositórios GitHub</h2>
+    </aside>
+    <main>
+        <div class="main-title-box">
+            <h1 class="main-title">Bem vindo a minha página do Github.</h1>
+        </div>
+        <div class="social-media-box">
+            <h2 class="social-media-title">Minhas redes sociais</h2>
+            <div class="links-box">
+                <a href="https://github.com/RafaelBarbosa17" target="_blank" class="link">
+                    <div class="link-box">
+                        <img class="link-svg" src="./src/img/github-svgrepo-com.svg" alt="github icon">
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/rafael-barbosa-30372524b/" target="_blank" class="link">
+                    <div class="link-box">
+                        <img class="link-svg" src="./src/img/linkedin-svgrepo-com.svg" height="45px" alt="linkedin icon">
+                    </div>
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=5531981024183" target="_blank" class="link">
+                    <div class="link-box">
+                        <img class="link-svg" src="./src/img/whatsapp-svgrepo-com.svg" alt="whatsapp icon">
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/viveirosr7/" target="_blank" class="link">
+                    <div class="link-box">
+                        <img class="link-svg" src="./src/img/instagram-svgrepo-com.svg" height="45px" alt="instagram icon">
+                    </div>
+                </a>
+            </div>
         </div>
     </main>
 </body>
 <script src="./src/script.js"></script>
 <script src="./src/scripts/age.js"></script>
+<script src="./src/scripts/background-effects.js"></script>
 </html>

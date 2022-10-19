@@ -3,12 +3,84 @@
     padding: 0;
     box-sizing: border-box;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    z-index: 10;
     color: white;
-    overflow-x: hidden;
     scroll-behavior: smooth;
+    z-index: 10;
+    font-family: 'JetBrains Mono', Arial, Helvetica, sans-serif;
 }
 
-html {
-    background-color: #1b1b1b;
+body {
+    display: flex;
+    overflow: hidden;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+.main-title-box {
+    margin: 100px auto 30px;
+    background-color: #100f0f9a;
+    width: max-content;
+    padding: 20px 30px;
+    border-radius: 50px;
+}
+
+.social-media-box {
+    width: 50%;
+    background-color: #100f0f9a;
+    padding: 20px;
+    margin: auto;
+    border-radius: 30px;
+}
+.social-media-title {
+    text-align: center;
+}
+
+.links-box {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.link {
+    width: 60px;
+    height: 60px;
+    overflow: visible;
+    border-radius: 6px;
+}
+.link-box:hover {
+    box-shadow: -5px 5px 0px 0px white;
+    position: relative;
+    bottom: 5px;
+    left: 5px;
+    cursor: pointer;
+    transition: all 100ms linear;
+}
+
+.link-box {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link:nth-child(1) .link-box {
+    background-color: #000;
+}
+.link:nth-child(2) .link-box {
+    background-color: #0a66c2
+}
+.link:nth-child(3) .link-box {
+    background-color: #00ff00;
+}
+.link:nth-child(4) .link-box {
+    background-color: #ff00dd;
+}
+
+.link-svg {
+    width: 50px;
 }
