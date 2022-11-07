@@ -1,56 +1,67 @@
 
-.profile-card {
-    min-width: 250px;
-    min-height: 450px;
-    width: 60%;
-    height: 75%;
-    background-color: #100f0f7c;
-    border-radius: 40px;
-    margin: 80px auto;
+.profile-card-box {
+    width: 100%;
+    height: 100%;
 }
 
-.picture-card {
-    width: 60%;
-    height: min-content;
-    margin: 1.5rem auto 0px;
-    overflow: hidden;
-    padding: 20px 0px 0px;
+.profile-card {
+    min-width: 160px;
+    width: 90%;
+    max-width: 500px;
+    height: max-content;
+    margin: auto;
+    background-color: #100f0f9a;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border-radius: 2rem;
+}
+
+.profile-picture {
+    width: 100%;
+    display: flex;
+    margin: 1rem auto;
 }
 
 .img-profile {
-    border-radius: 50%;
-    width: 100%;
+    min-width: 150px;
+    width: 50%;
+    max-width: 250px;
     height: auto;
-    border: solid blue 2px;
+    border-radius: 50%;
+    margin: auto;
 }
 
-.title-name-box {
-    width: 100%;
-    padding: 0px 10px;
-}
-
-.title-name {
-    font-size: 1.6rem;
+.title-name, .college {
     text-align: center;
 }
 
 .age-box {
-    width: 100%;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title-name {
+    font-size: 1.8rem;
 }
 
 .my-age {
     font-size: 1.2rem;
 }
 
-.college-box {
-    padding: 0px 10px;
-}
 .college {
+    font-size: 1.2rem;
+}
+
+.college-box {
+    margin: 0.8rem 0;
+}
+
+.skills {
+    font-size: 1.2rem;
     text-align: center;
 }
 
 .skills-box {
-    padding: 20px;
+    margin: 0 1rem;
 }

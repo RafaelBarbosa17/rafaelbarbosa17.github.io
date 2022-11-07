@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./src/style.css">
     <link rel="stylesheet" href="./src/styles/background-styled.css">
     <link rel="stylesheet" href="./src/styles/profile-card-style.css">
+    <link rel="stylesheet" href="src/styles/main-s.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
@@ -20,63 +21,68 @@
         <div class="backlight l4"></div>
         <div class="backlight l5"></div>
     </div>
-    <aside>
-        <div class="profile-card">
-            <div class="picture-card">
-                <img class="img-profile" src="" alt="">
-            </div>
-            <div class="title-name-box">
-                <h1 class="title-name"></h1>
-            </div>
-            <div class="age-box">
-                <span class="my-age"></span>
-            </div>
-            <div class="college-box">
-                <hr>
-                <p class="college">
-                    Análise e Desenvolvimento de Sistemas
-                </p>
-                <hr>
-            </div>
-            <div class="skills-box">
-                <p class="skills">
-                    React.js | JavaScript | HTML | CSS | PHP | Node.js | Linux | Git ...
-                </p>
-            </div>
-        </div>
-    </aside>
     <main>
-        <div class="main-title-box">
-            <h1 class="main-title">Bem vindo a minha página do Github.</h1>
-        </div>
-        <div class="social-media-box">
-            <h2 class="social-media-title">Minhas redes sociais</h2>
-            <div class="links-box">
-                <a href="https://github.com/RafaelBarbosa17" target="_blank" class="link">
-                    <div class="link-box">
-                        <img class="link-svg" src="./src/img/github-svgrepo-com.svg" alt="github icon">
-                    </div>
-                </a>
-                <a href="https://www.linkedin.com/in/rafael-barbosa-30372524b/" target="_blank" class="link">
-                    <div class="link-box">
-                        <img class="link-svg" src="./src/img/linkedin-svgrepo-com.svg" height="45px" alt="linkedin icon">
-                    </div>
-                </a>
-                <a href="https://api.whatsapp.com/send?phone=5531981024183" target="_blank" class="link">
-                    <div class="link-box">
-                        <img class="link-svg" src="./src/img/whatsapp-svgrepo-com.svg" alt="whatsapp icon">
-                    </div>
-                </a>
-                <a href="https://www.instagram.com/viveirosr7/" target="_blank" class="link">
-                    <div class="link-box">
-                        <img class="link-svg" src="./src/img/instagram-svgrepo-com.svg" height="45px" alt="instagram icon">
-                    </div>
-                </a>
+        <section class="profile-card-box">
+            <div class="profile-card">
+                <div class="profile-picture">
+                    <img class="img-profile" src="" alt="">
+                </div>
+                <div class="title-name-box">
+                    <h1 class="title-name"></h1>
+                </div>
+                <div class="age-box">
+                    <span class="my-age"></span>
+                </div>
+                <div class="college-box">
+                    <p class="college">
+                        Análise e Desenvolvimento de Sistemas
+                    </p>
+                </div>
+                <div class="skills-box">
+                    <p class="skills">
+                        React.js | JavaScript | HTML | CSS | PHP | Node.js | Linux | Git ...
+                    </p>
+                </div>
             </div>
-        </div>
+            </div>
+        </section>
+        <section class="main-s">
+            <div class="main-title-box">
+                <h1 class="main-title">Bem vindo a minha página do Github.</h1>
+            </div>
+            <div class="social-media-box">
+                <h2 class="social-media-title">Minhas redes sociais</h2>
+                <div class="links-box">
+                    <a href="https://github.com/RafaelBarbosa17" target="_blank" class="link">
+                        <span class="link-title">GitHub</span>
+                        <div class="link-box">
+                            <img class="link-svg" src="./src/img/github-svgrepo-com.svg" alt="github icon">
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/rafael-barbosa-30372524b/" target="_blank" class="link">
+                        <span class="link-title">LinkedIn</span>
+                        <div class="link-box">
+                            <img class="link-svg" src="./src/img/linkedin-svgrepo-com.svg" height="45px" alt="linkedin icon">
+                        </div>
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=5531981024183" target="_blank" class="link">
+                        <span class="link-title">WhatsApp</span>
+                        <div class="link-box">
+                            <img class="link-svg" src="./src/img/whatsapp-svgrepo-com.svg" alt="whatsapp icon">
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/viveirosr7/" target="_blank" class="link">
+                        <span class="link-title">Instagram</span>
+                        <div class="link-box">
+                            <img class="link-svg" src="./src/img/instagram-svgrepo-com.svg" height="45px" alt="instagram icon">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 <script src="./src/script.js"></script>
 <script src="./src/scripts/age.js"></script>
-<script src="./src/scripts/background-effects.js"></script>
+<!-- <script src="./src/scripts/background-effects.js"></script> -->
 </html>

@@ -1,0 +1,128 @@
+
+
+.main-s {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-title-box {
+    margin: 2rem 1rem;
+    background-color: #100f0f9a;
+    min-width: min-content;
+    max-width: max-content;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+}
+
+.main-title {
+    text-align: center;
+}
+
+.social-media-box {
+    min-width: 150px;
+    width: 90%;
+    max-width: 500px;
+    background-color: #100f0f9a;
+    padding: 1rem;
+    margin: auto;
+    border-radius: 30px;
+}
+
+.social-media-title {
+    text-align: center;
+}
+
+.links-box {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+.link {
+    min-width: 4rem;
+    min-height: 4rem;
+    overflow: visible;
+    border-radius: 6px;
+    margin: 0rem 0.5rem;
+}
+.link-title {
+    display: none;
+}
+.link-box:hover {
+    box-shadow: -5px 5px 0px 0px white;
+    position: relative;
+    bottom: 5px;
+    left: 5px;
+    cursor: pointer;
+    transition: all 100ms linear;
+}
+
+.link-box {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link:nth-child(1) .link-box {
+    background-color: #000;
+}
+.link:nth-child(2) .link-box {
+    background-color: #0a66c2
+}
+.link:nth-child(3) .link-box {
+    background-color: #00ff00;
+}
+.link:nth-child(4) .link-box {
+    background-color: #ff00dd;
+}
+
+.link-svg {
+    width: 2.5rem;
+}
+
+@media screen and (max-width: 400px) {
+    .links-box {
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: max-content;
+        margin: auto;
+    }
+    .link-title {
+        display: block;
+        font-size: 1.6rem;
+        margin: 1rem;
+    }
+    .link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        border-radius: 2rem;
+        min-width: max-content;
+        text-decoration: none;
+        margin: 1rem;
+    }
+    .link:nth-child(1) {
+        background-color: #000;
+    }
+    .link:nth-child(2) {
+        background-color: #0a66c2
+    }
+    .link:nth-child(3) {
+        background-color: #00ff00;
+    }
+    .link:nth-child(4) {
+        background-color: #ff00dd;
+    }
+    .link-box {
+        background-color: transparent;
+    }
+    .link-svg {
+        margin: 0 1rem;
+    }
+}
