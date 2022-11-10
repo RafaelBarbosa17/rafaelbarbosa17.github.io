@@ -1,7 +1,10 @@
 
 .profile-card-box {
     width: 100%;
-    height: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .profile-card {
@@ -64,4 +67,10 @@
 
 .skills-box {
     margin: 0 1rem;
+}
+
+@media screen and (min-width: 1000px) {
+    .profile-card-box {
+        max-width: 500px;
+    }
 }

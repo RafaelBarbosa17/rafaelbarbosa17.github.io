@@ -1,0 +1,103 @@
+.certificate-window {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 99999;
+    width: 1rem;
+    height: 1rem;
+    background-color: #ffffff;
+    margin: 5vh 5%;
+    border-radius:30px;
+    border: solid 2px black;
+    box-shadow: -10px 10px 10px 1px black;
+    overflow-y: scroll;
+}
+
+.open-window {
+    animation: showWindow 200ms linear forwards;
+}
+
+.close-window {
+    animation: hiddenWindow 200ms linear forwards;
+}
+
+@keyframes hiddenWindow {
+    0% {
+        width: 90%;
+        height: 90vh;
+    }
+    100% {
+        width: 1rem;
+        height: 1rem;
+    }
+}
+
+@keyframes showWindow {
+    0% {
+        width: 1rem;
+        height: 1rem;
+    }
+    100% {
+        width: 90%;
+        height: 90vh;
+    }
+}
+
+.certificate-title-box {
+    padding: 0 1rem;
+}
+
+.certificate-title {
+    color: black;
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 1rem 0rem;
+}
+
+.cc-title, .rc-title {
+    color: black;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    border-top: solid 1px black;
+}
+
+
+.cc-box, .rc-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 1rem 0;
+}
+.cc-box div, .rc-box div {
+    background-color: #292997f1;
+    border-radius: 20px;
+    padding: 1rem;
+}
+.cc-box div:hover, .rc-box div:hover {
+    cursor: pointer;
+    background-color: #0202b1f1;
+}
+.cc-box div a, .rc-box div a {
+    text-decoration: none;
+}
+
+.close-box {
+    display: flex;
+    justify-content: end;
+    padding: 0px 10px;
+}
+
+.close-window {
+    color: red;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.close-window:hover {
+    cursor: pointer;
+}

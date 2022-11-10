@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./src/styles/background-styled.css">
     <link rel="stylesheet" href="./src/styles/profile-card-style.css">
     <link rel="stylesheet" href="src/styles/main-s.css">
+    <link rel="stylesheet" href="/src/styles/certificate.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
@@ -79,10 +80,30 @@
                     </a>
                 </div>
             </div>
+            <div class="my-cert-box">
+                <button class="my-cert-button">Meus Certificados</button>
+            </div>
         </section>
     </main>
+    <div class="certificate-window">
+        <div class="certificate-title-box">
+            <div class="close-box">
+                <button class="close-window">x</button>
+            </div>
+            <h1 class="certificate-title">Meus certificados</h1>
+        </div>
+        <div class="codecademy-certificates-container">
+            <h2 class="cc-title">Certificados na Codecademy</h2>
+            <div class="cc-box"></div>
+        </div>
+        <div class="rocketseat-certificates-container">
+            <h2 class="rc-title">Certificados na Rocketseat</h2>
+            <div class="rc-box"></div>
+        </div>
+    </div>
 </body>
 <script src="./src/script.js"></script>
 <script src="./src/scripts/age.js"></script>
-<!-- <script src="./src/scripts/background-effects.js"></script> -->
+<script src="./src/scripts/background-effects.js"></script>
+<script src="./src/scripts/show-certificates.js"></script>
 </html>

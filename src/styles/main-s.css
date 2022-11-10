@@ -85,6 +85,19 @@
     width: 2.5rem;
 }
 
+.my-cert-box {
+    margin: 1.2rem auto 3rem;
+}
+.my-cert-button {
+    color: black;
+    font-size: 1.4rem;
+    padding: 1rem;
+    font-weight: 500;
+    border: solid 2px black;
+    border-radius: 1rem;
+    background-color: bisque;
+}
+
 @media screen and (max-width: 400px) {
     .links-box {
         flex-wrap: wrap;
@@ -124,5 +137,11 @@
     }
     .link-svg {
         margin: 0 1rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .main-s {
+        max-width: 500px;
     }
 }

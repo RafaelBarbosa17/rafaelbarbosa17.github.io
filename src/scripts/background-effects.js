@@ -1,6 +1,23 @@
+/*
 const backgroundStyle = document.querySelector(".background-styled");
 const body = document.querySelector('body');
 let counter = 0;
+let widthScreen = body.clientWidth;
+let ws = widthScreen / 100
+//console.log(widthScreen)
+
+const backLights = document.querySelectorAll('.backlight');
+
+const defineSizeBackLights = () => {
+    backLights[0].style.width = ws*11+'px';
+    backLights[0].style.height = ws*11+'px';
+
+    backLights[1].style.width = ws*7.5+'px';
+    backLights[1].style.height = ws*7.5+'px';
+}
+
+defineSizeBackLights()
+
 
 body.addEventListener('mousemove', (e) => {
     const div = document.createElement('div');
@@ -33,3 +50,4 @@ body.addEventListener('mousemove', (e) => {
         }, 500)
     }
 })
+*/
